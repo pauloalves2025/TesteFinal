@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro para Planilha</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('data:image/jpeg;base64,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'); /* URL da imagem */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.95); /* transparência para ver o fundo */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      width: 350px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    #mensagem {
+      margin-top: 10px;
+      text-align: center;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Cadastro</h2>
+    <form id="cadastroForm">
+      <input type="text" name="nome" placeholder="Nome completo" required>
+      <input type="email" name="email" placeholder="E-mail" required>
+      <input type="password" name="senha" placeholder="Senha" required>
+      <button type="submit">Cadastrar</button>
+      <div id="mensagem"></div>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById("cadastroForm");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const data = new FormData(form);
+      const url = "https://script.google.com/macros/s/AKfycbyExlIH4F2PCfcebVIsTQDA3o_OHi5njLlwJGjpkFXBexdez-_SFV3AwVmyhvjpNmKe/exec";
+
+      fetch(url, {
+        method: "POST",
+        mode: "no-cors",
+        body: data
+      }).then(() => {
+        document.getElementById("mensagem").textContent = "Cadastro realizado com sucesso!";
+        form.reset();
+      }).catch(() => {
+        document.getElementById("mensagem").textContent = "Erro ao enviar os dados.";
+      });
+    });
+  </script>
+
+</body>
+</html>
